@@ -1,0 +1,15 @@
+body {
+  background: #FDFC47;
+  background: linear-gradient(to top, #24FE41, #FDFC47);
+font-family: 'Space Mono', monospace;
+font-size: 100px;
+color: #24FE41
+
+}
+
+
+.paragraph-text{
+ text-align:center;
+transform: skewY(20deg);
+
+}

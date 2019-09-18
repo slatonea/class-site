@@ -1,0 +1,36 @@
+body{
+background-color: #FFC365;
+margin: 1px;
+
+}
+
+.heading-container {
+font-family: 'Darker Grotesque', sans-serif;
+font-weight: lighter;
+font-size: 100px;
+letter-spacing: 0px;
+line-height: 0.7px;
+text-align: left;
+text-transform: uppercase;
+display: block;
+position: fixed;
+padding-left: 10px;
+color: #FFDEDE;
+z-index: -1;
+/* display: block;
+position: absolute;
+top: 300px; */
+}
+
+.stanza-1 {
+font-family: 'Darker Grotesque', sans-serif;
+font-weight: 100;
+font-size: 20px;
+line-height: 0px;
+padding-left: 1150px;
+display: block;
+position: sticky;
+top: 30px;
+color: #FFFFFF;
+/* top: 60px; */
+}

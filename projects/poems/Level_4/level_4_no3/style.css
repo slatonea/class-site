@@ -1,0 +1,43 @@
+body {
+background-color: #000000;
+font-family: 'Questrial', sans-serif;
+/* font-size: 100px; */
+
+}
+
+.title-head {
+background-color:#000000;
+width: 515px;
+height: 90px;
+position: sticky;
+font-size: 100px;
+color: #FFFFFF;
+
+}
+
+.by-word {
+  padding-top: -30px;
+  padding-left: 80px;
+  font-size: 100px;
+  color: #A29999;
+  /* line-height: .80; */
+
+}
+
+.author-head{
+  background-color:#000000;
+  width: 550px;
+  height: 175px;
+  line-height: .90;
+  position: fixed;
+  font-size: 100px;
+  color: #FFFFFF;
+
+}
+
+.page-content {
+padding-top: 102px;
+font-size: 80px;
+line-height: 100%;
+color: #A29999;
+}

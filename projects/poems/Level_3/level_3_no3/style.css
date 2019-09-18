@@ -1,0 +1,88 @@
+body {
+  background-color: #E0E0E1;
+  margin: 20%;
+}
+
+P {
+  color: #DADADA;
+}
+
+
+.blockback-container1 {
+background: #DDFF09;
+}
+
+.backbox-1 {
+height: 1500px;
+}
+
+.stanza-1 {
+padding-top: 20px;
+padding-left: 20px;
+}
+
+.stanza-2 {
+position: relative;
+padding-top: 0px;
+padding-left: 0px;
+}
+
+.stanza-3 {
+position: relative;
+padding-top: 0px;
+padding-left: 0px;
+}
+
+.stanza-4 {
+  display: block;
+  position: absolute;
+padding-left: 250px;
+bottom: 340px;
+}
+
+.stanza-5 {
+  display: block;
+  position: absolute;
+left-padding: 100px;
+}
+
+.stanza-7 {
+  display: block;
+  position: absolute;
+left: 630px;
+bottom: 570px;
+}
+
+.stanza-8 {
+  display: block;
+  position: absolute;
+  right: 400px;
+  top: 370px;
+
+}
+
+.stanza-9 {
+  display: block;
+  position: relative;
+  right: 0px;
+  bottom: 30px;
+}
+
+.stanza-10 {
+  display: block;
+  position: relative;
+  right: 0px;
+  bottom: 30px;
+}
+
+.stanza-11{
+  display: block;
+  position: relative;
+  right: 0px;
+  bottom: 30px;
+}
+
+.stanza-12{
+
+
+}

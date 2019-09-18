@@ -1,27 +1,69 @@
 @font-face {
   font-family: 'Monarch';
-  src: url('MONARCH_1.4.woff2') format('woff2'),
-      url('MONARCH_1.4.woff') format('woff');
+  src: url('assets/web/monarch1.2.woff') format('woff'),
+  url('assets/web/monarch1.2.woff2') format('woff2');
 }
 
 body {
-  background-color: #FFEE00;
+  background-color: #FFFFFF;
+  margin: 3%;
 }
 
 h1 {
+position:fixed;
 text-align: right;
-font-size: 40px;
-padding-top: 20px;
-padding-left: 95%;
+font-size: 60px;
+/* padding-top: 20px;
+padding-left: 95%; */
+right: 0;
+top: 10px;
 writing-mode: vertical-rl;
-
-color: #000000
-
+font-family: 'Monarch', serif;
+color: #0049FF;
 }
 
-h2 {
-text-align: inherit;
-font-size: 20px;
+p {
+color: #0049FF;
+text-align:left;
+font-size: 40px;
+font-weight: lighter;
 padding-bottom: -50px;
-text-decoration: underline;
+font-weight: lighter;
+font-family: 'Crimson Text', serif;
+}
+
+.link-container1 {
+  color: #FF0606;
+  font-size: 20px;
+  font-family: monospace;
+  padding-left: 220px;
+}
+
+.link-container2 {
+  color: #FF0606;
+  font-size: 20px;
+  font-family: monospace;
+  padding-left: 280px;
+}
+
+.link-container3 {
+  color: #FF0606;
+  font-size: 20px;
+  font-family: monospace;
+  padding-left: 400px;
+}
+
+.link-container4 {
+  color: #FF0606;
+  font-size: 20px;
+  font-family: monospace;
+  padding-left: 520px;
+}
+
+
+.link-container5 {
+  color: #FF0606;
+  font-size: 20px;
+  font-family: monospace;
+  padding-left: 620px;
 }
