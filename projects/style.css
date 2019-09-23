@@ -9,33 +9,21 @@ html {
   /* margin: 3%; */
 }
 
-.handmade {
+
+.ex1 {
+  background-color: #000000 !important;
   position: fixed;
-  /* text-align: center; */
-  font-size: 95px;
+  font-size: 90px;
   left: 10px;
-  top: -60px;
-  /* writing-mode: vertical-rl; */
-  font-family: 'Monarch', serif;
-  color: #000000;
-  background-clip: content-box;
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  line-height: 1;
+  top: 10px;
+  border: 90px;
+  font-family: 'Inconsolata', monospace;
+  Text', serif;
 }
 
-.handmade:hover {
+.ex1:hover {
   display: block;
   color: #A7FF02;
-  cursor: wait;
-}
-
-.box {
-  display: fixed;
-  height: 95%;
-  width: 1500px;
-  background: #c8a3cc;
 }
 
 a {
@@ -46,6 +34,14 @@ a {
 a:hover {
   color: #A7FF02;
 }
+
+.box {
+  display: fixed;
+  height: 95%;
+  width: 1500px;
+  background: #F5F1EE;
+}
+
 
 .link1 {
   display: inline;
@@ -69,29 +65,5 @@ bottom: 60px;
 left: 1340px;
 background-color: #000000;
 z-index: 1;
-}
 
-.update-time {
-position: fixed;
-font-size: 16px;
-left: 20px;
-bottom: 770px;
-font-family: 'Monarch', serif;
-color: #A7FF02;
-
-}
-
-
-@keyframes floating {
-  0% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(8%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
 }

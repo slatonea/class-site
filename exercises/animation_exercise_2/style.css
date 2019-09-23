@@ -1,0 +1,45 @@
+html {
+  background: white;
+}
+
+body {
+  padding: 50px;
+  color: rgba(0, 0, 0,);
+}
+
+.trigger {
+  width: 200px;
+  height: 200px;
+  background: #ddd
+  border: 20px solid #999
+}
+
+.box:hover {
+  transform: translate(200px, 150px) rotate(20deg)
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  /* pointer-events: none; */
+  background: pink;
+  display: inline-block;
+  transition: transform 300ms ease-in-out
+}
+
+.hidden {
+width: 80%;
+height: 80%;
+border-radius: 50%;
+animation: runner 2s alternate infinite ease;
+background: rgb(240, 204, 76)
+}
+
+.hover:hidden {
+color: #36e97e;
+}
+
+
+@keyframes runner {
+  0% {
+    transform: translate(400px);

@@ -1,0 +1,29 @@
+P {
+font-family: monospace;
+font-size: 100%
+}
+
+body {
+background-color: #dba714;
+
+}
+
+h1 {
+font-family: sans-serif;
+font-weight: 400;
+
+}
+
+h2 {
+font-family: sans-serif;
+font-weight: lighter;
+font-size: 20px;
+}
+
+ul {
+  font-family: monospace;
+}
+
+ol {
+font-family: monospace
+}
