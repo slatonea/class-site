@@ -72,13 +72,13 @@ z-index: 1;
 }
 
 .update-time {
-position: fixed;
+position: relative;
 font-size: 16px;
 left: 20px;
-bottom: 770px;
+bottom: 800px;
 font-family: 'Monarch', serif;
 color: #A7FF02;
-
+animation: example1 10s linear infinite;
 }
 
 
@@ -95,3 +95,8 @@ color: #A7FF02;
     transform: translateY(0%);
   }
 }
+
+@keyframes example1 {
+ 0%   {
+ transform: translateX(100%);
+ }
