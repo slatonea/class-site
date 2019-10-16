@@ -1,5 +1,1729 @@
-{
+@font-face {
+  font-family: "saoltext lightitalic";
+  src: url("fonts/saol_text_light_italic.eot");
+  src: url("fonts/saol_text_light_italic.woff") format("woff");
+}
 
+title {
+  color: red;
+}
 
-  
+body {
+  margin: 0%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* nav_bar! */
+.background {
+  margin: 0%;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -10;
+}
+
+.horizontal-line {
+  width: 100vw;
+  position: absolute;
+  top: 6vh;
+  border-bottom: 1px solid #7b68ee;
+  z-index: 4;
+  opacity: 0;
+}
+
+/* clock & date  */
+.clock {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 15px;
+  font-family: "saoltext lightitalic", serif;
+  letter-spacing: 1px;
+  cursor: none;
+  z-index: 10;
+}
+
+#date {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 15px;
+  font-family: "saoltext lightitalic", serif;
+  letter-spacing: 1px;
+  display: none;
+  cursor: none;
+  z-index: 9;
+}
+
+/* hover properties */
+.clock:hover {
+  display: none;
+}
+
+.clock:hover + #date {
+  display: block;
+}
+
+/* start of background */
+.border1 {
+  display: block;
+  position: absolute;
+  height: 735px;
+  width: 1393px;
+  top: 50px;
+  margin: 1%;
+  border: 8px solid #8b4513;
+  border-style: dashed;
+  z-index: 1;
+}
+
+.border2 {
+  display: block;
+  position: absolute;
+  height: 746px;
+  width: 1404px;
+  top: 50px;
+  margin: 1%;
+  border: 3px dotted #ffe4b5;
+  z-index: 3;
+}
+
+.border3 {
+  display: block;
+  position: absolute;
+  height: 741px;
+  width: 1400px;
+  top: 50px;
+  margin: 1%;
+  border: 5px solid #a52a2a;
+  z-index: 2;
+}
+
+/* top vines */
+.vine-left {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 11%;
+  bottom: 90%;
+  right: -2%;
+  transform: rotate(81deg);
+  z-index: 0;
+}
+
+.vine-left2 {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 7%;
+  bottom: 10%;
+  right: 3%;
+  transform: rotate(10deg);
+  z-index: 0;
+}
+
+.vine-right {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 11%;
+  bottom: 90%;
+  left: -2%;
+  transform: rotate(-81deg);
+  z-index: 0;
+}
+
+.vine-right2 {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 8%;
+  bottom: 10%;
+  left: 4%;
+  transform: rotate(-10deg);
+  z-index: 0;
+}
+
+/* bottom vines */
+.vine-bottom-right {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 95%;
+  bottom: 6%;
+  left: -1%;
+  transform: scaleX(1);
+  transform: rotate(-90deg);
+  z-index: 0;
+}
+
+.vine-bottom-right2 {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 100%;
+  bottom: 6%;
+  left: 1%;
+  transform: scaleY(-1);
+  z-index: 0;
+}
+
+.vine-bottom-left {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 95%;
+  bottom: 9%;
+  right: -3%;
+  transform: scaleX(1);
+  transform: rotate(90deg);
+  z-index: 0;
+}
+
+.vine-bottom-left2 {
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 100%;
+  bottom: 6%;
+  right: 1%;
+  transform: scaleY(-1);
+  z-index: 0;
+}
+
+/* end of vines */
+.oval {
+  display: block;
+  position: absolute;
+  background: #261515;
+  border-radius: 0%;
+  height: 85vh;
+  width: 94vw;
+  bottom: 20%;
+  top: 12%;
+  right: 20px;
+  left: 42px;
+}
+
+.line1 {
+  display: block;
+  position: absolute;
+  border-radius: 0%;
+  border-bottom: 3px double green;
+  height: 48vh;
+  width: 74vw;
+  bottom: 20%;
+  top: 34%;
+  left: 13%;
+  z-index: 2;
+}
+
+.line2 {
+  display: block;
+  position: absolute;
+  border-radius: 0%;
+  border-top: 3px double green;
+  height: 48vh;
+  width: 74vw;
+  bottom: 0%;
+  top: 25%;
+  left: 13%;
+  z-index: 2;
+}
+
+.oval3 {
+  display: block;
+  position: absolute;
+  background: #c3ac8d;
+  border-radius: 20%;
+  border: 10px double #b8860b;
+  height: 48vh;
+  width: 60vw;
+  bottom: 20%;
+  top: 29%;
+  left: 19%;
+}
+
+.oval-border {
+  display: block;
+  position: absolute;
+  border: 5px solid #fff0f5;
+  border-style: dotted;
+  border-radius: 10%;
+  height: 703px;
+  width: 1360px;
+  bottom: 22%;
+  top: 10%;
+  right: 20px;
+  left: 33px;
+  z-index: 1;
+}
+
+.backgroundborder {
+  display: block;
+  position: absolute;
+  border: 20px double #b8860b;
+  height: 690px;
+  width: 1340px;
+  top: 50px;
+  z-index: 0;
+  margin: 2%;
+}
+
+/* positionings keyboard flowers! */
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 82%;
+  left: 10%;
+  right: 15%;
+  z-index: 0;
+}
+
+/* bottom-row keyboard flowers! */
+
+.key-flower1 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower2 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower3 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower4 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower5 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower6 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower7 {
+  color: #48d1cc;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower8 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower9 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower10 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower11 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower12 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower13 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+/* top-row flowers! */
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 75%;
+  transform: scaleY(-1);
+  left: 10%;
+  right: 15%;
+  z-index: 0;
+}
+
+.key-flower14 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower15 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower16 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower17 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower18 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower19 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower20 {
+  color: #48d1cc;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower21 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower22 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower23 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower24 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower25 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower26 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+/* left-row flowers! */
+.left-row {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 30%;
+  left: 0%;
+  right: 84%;
+  z-index: 0;
+}
+
+.key-flower27 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower28 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower29 {
+  color: #48d1cc;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower30 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower31 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+/* right-row flowers! */
+.right-row {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 61%;
+  right: 0%;
+  left: 84%;
+  z-index: 0;
+}
+
+.key-flower32 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower33 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower34 {
+  color: #48d1cc;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower35 {
+  color: #dc143c;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.key-flower36 {
+  color: #c71585;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+/* end of keyboard row flowers */
+
+/* start of corner flowers! */
+.corner-flower1 {
+  display: block;
+  position: absolute;
+  width: 100px;
+  transform: rotate(-45deg);
+  top: 85%;
+  left: 89%;
+  right: 25%;
+  z-index: 0;
+}
+
+.corner-flower2 {
+  display: block;
+  position: absolute;
+  width: 100px;
+  transform: rotate(-135deg);
+  top: 15%;
+  left: 89%;
+  right: 25%;
+  z-index: 0;
+}
+
+.corner-flower3 {
+  display: block;
+  position: absolute;
+  width: 100px;
+  transform: rotate(135deg);
+  top: 15%;
+  left: 3%;
+  right: %;
+  z-index: 0;
+}
+
+.corner-flower4 {
+  display: block;
+  position: absolute;
+  width: 100px;
+  transform: rotate(405deg);
+  top: 87%;
+  left: 3%;
+  right: 25%;
+  z-index: 0;
+}
+
+/* end of corner flowers */
+
+.ornamnet-bottom {
+  color: #b8860b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  font-size: 60px;
+  top: 62%;
+  left: 20%;
+  right: 20%;
+  z-index: 0;
+}
+
+.ornamnet-top {
+  color: #b8860b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(-180deg);
+  font-size: 60px;
+  top: 23%;
+  left: 50%;
+  right: 70%;
+  z-index: 0;
+}
+
+.ornamnet-left {
+  color: #b8860b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(-270deg);
+  font-size: 70px;
+  top: 40%;
+  left: 23%;
+  right: 78%;
+  z-index: 0;
+}
+
+.ornamnet-right {
+  color: #b8860b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(270deg);
+  font-size: 70px;
+  top: 40%;
+  left: 77%;
+  right: 25%;
+  z-index: 0;
+}
+
+/* bouquet flowrs */
+
+.bouquet-inner1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 37%;
+  left: 42%;
+  right: 83%;
+  z-index: 5;
+}
+
+.bouquet1 {
+  color: red;
+  font-weight: bolder;
+  font-size: 5px;
+}
+
+.bouquet-inner2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 36%;
+  left: 33%;
+  right: 83%;
+  z-index: 5;
+}
+
+.bouquet2 {
+  color: #8a2be2;
+  font-weight: bolder;
+  font-size: 5px;
+}
+
+.bouquet-inner3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 36%;
+  left: 65%;
+  right: 83%;
+  z-index: 5;
+}
+
+.bouquet3 {
+  color: #8a2be2;
+  font-weight: bolder;
+  font-size: 5px;
+}
+
+/* end of middle flowers! */
+
+.mini-flower1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 28%;
+  left: 60%;
+  right: 68%;
+  z-index: 5;
+  color: #66cdaa;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.mini-flower2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 55%;
+  left: 60%;
+  right: 68%;
+  z-index: 5;
+  color: #66cdaa;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.two-flowers1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 65%;
+  left: 19%;
+  right: 83%;
+  z-index: 5;
+  color: #7b68ee;
+  font-weight: bolder;
+  font-size: 2px;
+}
+
+.two-flowers2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 19%;
+  left: 19%;
+  right: 83%;
+  z-index: 5;
+  color: #7b68ee;
+  font-weight: bolder;
+  font-size: 2px;
+}
+
+.two-flowers3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 19%;
+  left: 81%;
+  right: 13%;
+  z-index: 5;
+  color: #7b68ee;
+  font-weight: bolder;
+  font-size: 2px;
+}
+
+.two-flowers4 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 65%;
+  left: 81%;
+  right: 13%;
+  z-index: 5;
+  color: #7b68ee;
+  font-weight: bolder;
+  font-size: 2px;
+}
+
+/* end of corner flowers */
+
+.middle-flower1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 36%;
+  left: 75%;
+  right: 83%;
+  z-index: 5;
+  color: #7fffd4;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.middle-flower2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 36%;
+  left: 24%;
+  right: 83%;
+  z-index: 5;
+  color: #7fffd4;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.between-flower1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 52%;
+  left: 84%;
+  right: 30%;
+  z-index: 5;
+  color: #ffc0cb;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.between-flower2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 52%;
+  left: 14%;
+  right: 84%;
+  z-index: 5;
+  color: #ffc0cb;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.between-flower3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 69%;
+  left: 45%;
+  right: 14%;
+  z-index: 5;
+  color: #ffd700;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.between-flower4 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 17%;
+  left: 45%;
+  right: 14%;
+  z-index: 5;
+  color: #c8dec8;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+/* start of hover-questions! */
+
+#box-1 {
+  background-color: orange;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 6;
+  cursor: none;
+}
+
+.question {
+  position: absolute;
+  color: #F5FFFA;
+  font-family: "saoltext lightitalic", serif;
+  font-size: 20px;
+  display: none;
+  cursor: none;
+}
+
+#box-1:hover + .question {
+  display: block;
+  cursor: none;
+}
+
+/* /////////// */
+
+/* start of questions! */
+
+/* top row questions outerflowers */
+#box-2 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 60px;
+  top: 12%;
+  left: 10%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-2:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
+}
+
+/* ///////////// */
+
+#box-3 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 70px;
+  top: 12%;
+  left: 17%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-3:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-4 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 12%;
+  left: 23%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-4:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-5 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 12%;
+  left: 29%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-5:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-6 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 12%;
+  left: 35%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-6:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-7 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 12%;
+  left: 41%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-7:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-8 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 10%;
+  left: 47%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-8:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-9 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 10%;
+  left: 54%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-9:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-10 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 100px;
+  top: 10%;
+  left: 60%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-10:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-11 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 90px;
+  top: 10%;
+  left: 66%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-11:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-12 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 90px;
+  top: 10%;
+  left: 72%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-12:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-13 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 102px;
+  top: 10%;
+  left: 78%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-13:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-14 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 102px;
+  top: 10%;
+  left: 84%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-14:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* bottom row questions outerflowers */
+
+#box-15 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 76px;
+  height: 104px;
+  top: 80%;
+  right: 84%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-15:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-16 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 76px;
+  height: 80px;
+  top: 80%;
+  right: 78%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-16:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-17 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 76px;
+  height: 80px;
+  top: 80%;
+  right: 72%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-17:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-18 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 76px;
+  height: 105px;
+  top: 80%;
+  right: 66%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-18:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-19 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 76px;
+  height: 87px;
+  top: 80%;
+  right: 60%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-19:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-20 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 70px;
+  top: 80%;
+  right: 53%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-20:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-21 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 70px;
+  top: 83%;
+  right: 47%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-21:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-22 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 70px;
+  top: 80%;
+  right: 41%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-22:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-23 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 68px;
+  top: 80%;
+  right: 35%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-23:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-24 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 130px;
+  top: 80%;
+  right: 29%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-24:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-25 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 84px;
+  height: 85px;
+  top: 80%;
+  right: 23%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-25:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-26 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 65px;
+  top: 80%;
+  right: 17%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-26:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-27 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 85px;
+  top: 80%;
+  right: 10%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-27:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* right side outerflowers */
+
+/* ///////////// */
+
+#box-28 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 110px;
+  top: 70%;
+  right: 5%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-28:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-29 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 70px;
+  top: 58%;
+  right: 5%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-29:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-30 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 70px;
+  top: 47%;
+  right: 5%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-30:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-31 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 85px;
+  top: 35%;
+  right: 5%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-31:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* ///////////// */
+
+#box-32 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 90px;
+  height: 65px;
+  top: 23%;
+  right: 5%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-32:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: none;
+}
+
+/* left side outer flowers */
+
+#box-33 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 105px;
+  top: 24%;
+  left: 8%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-33:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
+}
+
+/* ///////////// */
+
+#box-34 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 105px;
+  top: 34%;
+  left: 8%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-34:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
+}
+
+/* ///////////// */
+
+#box-35 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 105px;
+  top: 47%;
+  left: 8%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-35:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
+}
+
+/* ///////////// */
+
+#box-36 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 83px;
+  top: 59%;
+  left: 8%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-36:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
+}
+
+/* ///////////// */
+
+#box-37 {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  color: black;
+  width: 70px;
+  height: 83px;
+  top: 72%;
+  left: 8%;
+  z-index: 6;
+  cursor: grab;
+}
+
+#box-37:active {
+  font-family: "saoltext lightitalic", serif;
+  opacity: 1;
+  text-align: center;
+  background-color: pink;
+  cursor: grabbing;
 }
